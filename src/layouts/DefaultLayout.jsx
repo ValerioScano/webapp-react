@@ -3,8 +3,10 @@ import Header from "../components/Header"
 
 function DefaultLayout() {
     return <>
-        <Header></Header>,
-        <Outlet></Outlet>
+        <Header></Header>
+        <main>
+            <Outlet></Outlet>
+        </main>
     </>
 }
 
