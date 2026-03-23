@@ -3,7 +3,7 @@ import style from "./Header.module.css"
 
 function Header() {
     return <header >
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between align-items-center px-5">
             <a href="/" alt="iconmoviesbutton"><img src="/imgmovie.jpg" alt="iconmovies" className={style.logo} /></a>
             <div className="d-flex gap-3">
                 <Link to="/">Homepage</Link>
