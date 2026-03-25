@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ReviewCard from "../components/ReviewCard"
+import style from "./FilmDetailPage.module.css"
 
 function FilmDetailPage() {
 
@@ -20,8 +21,8 @@ function FilmDetailPage() {
         <div className="d-flex justify-content-center py-3">
             <h1>Questa è la pagina di dettaglio</h1>
         </div>
-        <div className="d-flex justify-content-center px-5 flex-column align-items-center">
-            <img src={image} alt={title} />
+        <div className={style.card}>
+            <img src={`http://localhost:3000/static/${image}`} alt={title} />
             <h2>{title}</h2>
             <h3>{director}</h3>
             <p>{abstract}</p>
