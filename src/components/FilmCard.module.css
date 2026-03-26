@@ -1,15 +1,11 @@
 .card {
-    width: 200px;
     display: flex;
     flex-direction: column;
-    padding: 3px;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: calc(25% - 5px);
 }
 
-.cardimg {
-    width: 100%;
-    max-height: 180px;
-    height: auto;
-    object-fit: cover;
+div img {
+    object-fit: contain;
 }

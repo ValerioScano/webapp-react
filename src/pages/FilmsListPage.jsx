@@ -18,10 +18,10 @@ function FilmsListPage() {
         <div className="d-flex justify-content-center py-3">
             <h1>Benvenuto nel catalogo film</h1>
         </div>
-        <div className="d-flex justify-content-center px-5">
+        <div className="d-flex justify-content-center pb-5">
             <p>Io sono una semplice lista di film. Il mio testo non è pomposo come quello della Homepage, per fortuna</p>
         </div>
-        <div className="d-flex justify-content-between px-5 gap-2 flex-wrap align-items-start">
+        <div className="d-flex justify-content-start px-5 gap-5 flex-wrap align-items-start py-5">
             {films.map(film => <FilmCard key={film.id} film={film} />)}
         </div>
     </div>

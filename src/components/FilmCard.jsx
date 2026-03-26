@@ -5,7 +5,6 @@ function FilmCard({ film }) {
     const { id, title, director, abstract, image } = film;
 
     return <div className={style.card}>
-        {console.log(image)}
         <img src={`http://localhost:3000/static/${image}`} alt={title} className={style.cardimg} />
         <h2>{title}</h2>
         <h3>{director}</h3>
